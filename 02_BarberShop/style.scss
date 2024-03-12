@@ -1,0 +1,165 @@
+@import 'variables';
+
+body{
+    font-family: $textFont;  
+    margin: 0;
+    padding: 0; 
+}
+
+.title{
+    font-family: $titleFont;
+}
+
+.Header{
+    background: url(./img/coiffeur-fond.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    &-nav{
+        text-align: center;
+        box-sizing: border-box;
+        min-height: 15%;
+        background-color: rgba(128, 128, 128, 0.521);
+        padding: $space;
+        &-link{
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            color: $white;
+            text-shadow:2px 2px 2px rgba(0, 0, 0, 0.651);
+            text-decoration: none;
+            padding:$space $bigSpace;
+            text-align: center;
+        }
+        
+    }
+    &-promo{
+        background-color: rgba(128, 128, 128, 0.315);
+        color: $white;
+        text-shadow:2px 2px 2px rgba(0, 0, 0, 0.651);
+        font-size:small;
+        margin: 0;
+        text-align: center;
+        padding: $space 0;
+    }
+    &-title{
+        box-sizing: border-box;
+        color: $white;
+        text-shadow:2px 2px 2px rgba(0, 0, 0, 0.651);
+        padding: $bigSpace 0;
+        text-align: center;
+        font-size: 2.5em;
+    }
+}
+
+.Layout{
+    padding: 0 $bigSpace;
+    text-align: center;
+}
+
+.MainContent-tarif{
+    &-title{
+        color: $darkerGrey;
+    }
+}
+
+.Table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: $captionColorTable;
+    margin: 20px 0;
+    &-title{
+        background-color: $grey;
+        text-align: start;
+        color: $white;
+        padding: 20px 0 20px 30px;
+    }
+}
+
+td { 
+    border-width:1px;
+    border-style:solid; 
+    border-color:$grey; 
+    padding: 4px 0;
+    color: $darkerGrey;
+    &:first-child{
+        text-align: start;
+        padding: 10px 0 10px 10px;
+    }
+    &:last-child{
+        padding: 0 15px;
+        color: brown;
+        
+    }  
+    }
+
+tr:nth-child(2){
+    background-color: $white;
+}
+
+tr:nth-child(4){
+    background-color: $lightGrey;
+}
+
+.MainContent-contact{
+    &-title{
+        color: $darkerGrey;
+    }
+}
+
+.Form{
+    &>fieldset{
+    margin: 20px 0;
+    padding: 20px 0;
+    color: $darkerGrey;
+    background-color: $captionColorTable;
+    border: none;
+    &>legend{
+        text-align: start;
+    } 
+    }
+    &-coordonnee{
+        &>input{
+            border: none;
+            border-bottom: dashed 1px $grey;
+            background: none;
+        }
+    }
+    &-reason{
+        &>label{
+        padding: 0 0 0 20px;
+        }
+    }
+    &-question{
+        &>select{
+            width: 90%;
+            border-color: $grey;
+        }
+    }
+    &>button{
+        border-radius: 8px 0;
+        border: none;
+        padding: 6px 15px;
+        background-color: $captionColorTable;
+        color: $white;
+
+        
+    }
+}
+
+.Footer{
+    background-color: $darkerGrey;
+    color: $white;
+    margin: 20px 0 0 0;
+    &>p{
+        margin: 0;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+
+
+

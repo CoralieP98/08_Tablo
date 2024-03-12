@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/84b2e4f32b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="Header">
+        <nav class="Header-nav">
+            <a href="" class="Header-nav-link title"><i class="fa-solid fa-house-chimney"></i>accueil</a>
+            <a href="" class="Header-nav-link title"><i class="fas fa-calendar"></i></i>Rendez-vous</a>
+            <a href="" class="Header-nav-link title"><i class="fas fa-book"></i>L'équipe</a>
+            <a href="" class="Header-nav-link title"><i class="fa-solid fa-window-restore"></i></i>Album Photo</a>
+            <a href="" class="Header-nav-link title"><i class="fas fa-envelope"></i>Nous contacter</a>
+        </nav>
+        <p class="Header-promo title">OFFRE covid-19: une coupe achetée, une autre pas gratuite!</p>
+        <h1 class="Header-title title">Bienvenue chez Bernie's BarberShop</h1>
+    </header>
+    <main class="MainContent Layout">
+        <section class="MainContent-tarif">
+            <h2 class="MainContent-tarif-title title">Quelques uns de nos prix</h2>
+            <table class="MainContent-tarif-table Table">
+                <tr>
+                    <th class="Table-title title" colspan="3">Entretien</th>
+                </tr>
+                <tr>
+                    <td>Taille de barbe</td>
+                    <td>10 minutes</td>
+                    <td class="Table-price">80 €</td>
+                </tr>
+                <tr>
+                    <td>Coupe classique</td>
+                    <td>10 minutes</td>
+                    <td class="Table-price">120 €</td>
+                </tr>
+                <tr>
+                    <td>Changer rien</td>
+                    <td>0 minutes</td>
+                    <td class="Table-price">50 €</td>
+                </tr>
+                <tr>
+                    <td>Couleur unie</td>
+                    <td>2 minutes</td>
+                    <td class="Table-price">100 €</td>
+                </tr>
+            </table>
+            <table class="MainContent-tarif-table Table">
+                <tr>
+                    <th class="Table-title title" colspan="3">Relooking</th>
+                </tr>
+                <tr>
+                    <td>La nuque longue de Wadel</td>
+                    <td>2 minutes</td>
+                    <td class="Table-price">1000 €</td>
+                </tr>
+                <tr>
+                    <td>La moustache de Dali</td>
+                    <td>10 minutes</td>
+                    <td class="Table-price">7500 €</td>
+                </tr>
+                <tr>
+                    <td>Trou dans les cheveux</td>
+                    <td>5 minutes</td>
+                    <td class="Table-price">C'est cadeau!</td>
+                </tr>
+                <tr>
+                    <td>Couleur "Tie And Die"</td>
+                    <td>40 minutes</td>
+                    <td class="Table-price">1 million €</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="MainContent-contact">  
+            <h3 class="MainContent-contact-title title">Pour réserver un créneau horraires, compléter ce formulaire :</h3>
+            <form class="MainContent-contact-form Form">
+                <fieldset class="Form-coordonnee">
+                  <legend>Vos coordonnées</legend>
+                    <label for="name">Votre prénom&nbsp;:</label>
+                    <input type="text" id="name" name="user_name" />
+                    <label for="surname">Votre nom&nbsp;:</label>
+                    <input type="text" id="surname" name="user_surname" />
+                    <label for="mail">E-mail&nbsp;:</label>
+                    <input type="email" id="mail" name="user_mail" />
+                </fieldset>
+                <fieldset class="Form-reason">
+                    <legend>Quelles sont les raisons de votre venue?</legend>
+                    <label for="reason1">J'ai pris un coup de vieux</label>
+                    <input type="checkbox" name="reason1" id="reason">
+                    <label for="reason2">J'ai trop d'argent</label>
+                    <input type="checkbox" name="reason2" id="reason">
+                    <label for="reason3">J'ai eu un accident de tondeuse</label>
+                    <input type="checkbox" name="reason3" id="reason">
+                </fieldset>
+                <fieldset class="Form-fidelity">
+                    <legend>Voulez-vous souscrire à notre programme de fidélité ?<span aria-label="required">*</span></legend>
+                    <label for="oui">oui</label>
+                    <input type="radio" name="oui" id="fidelity-yes" required>
+                    <label for="oui">oui</label>
+                    <input type="radio" name="oui" id="fidelity-yes" required>
+                </fieldset>
+                <fieldset class="Form-question">
+                    <legend>Comment avez-vous connu le salon ?</legend>
+                    <label for="question"></label>
+                    <select id="question" name="question-salon">
+                        <option value="internet">Par internet</option>
+                        <option value="Bouche">Par bouche à oreille</option>
+                        <option value="illumination">Par illumination</option>
+                      </select>
+                </fieldset>
+                <button type="submit">Envoyer</button>  
+              </form>
+        </section>
+    </main>
+    <footer class="Footer">
+        <p>Copyright 2017</p>
+    </footer>
+</body>
+</html>
